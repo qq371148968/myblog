@@ -1,10 +1,10 @@
 ---
-title: CSS属性white-space
-date: 2019-01-29
-categories: CSS
+title: Linux脚本编程——呈现数据2
+date: 2019-01-28
+categories: Linux
 tags:
-- TEXTARA
-- CSS
+- bash shell
+- shell笔记
 ---
 
 
