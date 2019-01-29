@@ -214,8 +214,7 @@ font:
 #social:
   #LinkLabel: Link
 social:
-    GitHub: https://github.com/ShixiangWang
-    简书: http://www.jianshu.com/u/b6608e27dc74
+    Weibo: https://weibo.com/zhaoying86/home?wvr=5
 # Social Links Icons
 # Icon Mapping:
 #   Map a menu item to a specific FontAwesome icon name.
@@ -237,7 +236,7 @@ alipay:
 # Sidebar Avatar
 # in directory: /assets/images/avatar.gif
 #avatar:
-avatar: /images/avatar.jpg
+avatar: /images/avatar2.jpg
 
 # Table Of Contents in the Sidebar
 toc:
