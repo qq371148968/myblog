@@ -1,17 +1,15 @@
 ---
-title: xxx
-date: 2019-08-21
-categories: Linux
+title: "python模块学习之OS2"
+data: 2019-01-28
+categories: python
 tags:
-- bash shell
-- shell笔记
+- python
+- os
 ---
 
 
 
-
-
-## 写在阅读之前
+## 写在阅读之前2
 PP4E\Internet\Sockets\fork-server.py 学习遇到的知识点回顾
 参考链接：https://www.programcreek.com/python/example/424/os.waitpid
 
