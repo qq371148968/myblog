@@ -1,4 +1,4 @@
---
+---
 title: "python模块学习之socket"
 data: 2019-01-29
 categories: python
@@ -31,7 +31,7 @@ sk = socket.socket(socket.AF_INET,socket.SOCK_STREAM,0)
 
 　　socket.AF_UNIX 只能够用于单一的Unix系统进程间通信
 
-参数二：类型
+**参数二**：类型
 
 　　socket.SOCK_STREAM　　流式socket , for TCP （默认）
 　　socket.SOCK_DGRAM　　 数据报式socket , for UDP
@@ -40,7 +40,7 @@ sk = socket.socket(socket.AF_INET,socket.SOCK_STREAM,0)
 　　socket.SOCK_RDM 是一种可靠的UDP形式，即保证交付数据报但不保证顺序。SOCK_RAM用来提供对原始协议的低级访问，在需要执行某些特殊操作时使用，如发送ICMP报文。SOCK_RAM通常仅限于高级用户或管理员运行的程序使用。
 　　socket.SOCK_SEQPACKET 可靠的连续数据包服务
 
-参数三：协议
+**参数三**：协议
 
 　　0　　（默认）与特定的地址家族相关的协议,如果是 0 ，则系统就会根据地址格式和套接类别,自动选择一个合适的协议
 
