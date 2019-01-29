@@ -9,25 +9,30 @@ tags:
 
 
 
-> 本章内容：
->
-> - 再探重定向
-> - 标准输入和输出
-> - 报告错误
-> - 丢弃数据
-> - 创建日志文件
 
 
+## 写在阅读之前
+PP4E\Internet\Sockets\fork-server.py 学习遇到的知识点回顾
+参考链接：https://www.programcreek.com/python/example/424/os.waitpid
 
-<!-- more -->
 
-## 理解输入和输出
+##os.fork()
 
-显示输出的方法有：
+fork出一个子进程，在子进程中返回0，在父进程中返回子进程ID，如果发生错误，则抛出OSError异常
 
-- 在显示器屏幕上输出
-- 将输出重定向到文件中
-- 有时将一部分数据显示在显示器上；一部分保存到文件中。
+注意：在一些平台下如FreeBSD，Cygwin和OS/2 EMX系统中使用该函数会有问题。
 
-之前涉及的脚本都是以第一种方式输出。现在我们来具体了解下输入和输出。
+
+## os.waitpid(pid,options)
+等待进程id为pid的进程结束，返回一个tuple，包括进程的进程ID和退出信息(和os.wait()一样)，参数options会影响该函数的行为。在默认情况下，options的值为0。
+
+如果pid是一个正数，waitpid()请求获取一个pid指定的进程的退出信息，如果pid为0，则等待并获取当前进程组中的任何子进程的值。如果pid为-1，则等待当前进程的任何子进程，如果pid小于-1，则获取进程组id为pid的绝对值的任何一个进程。当系统调用返回-1时，抛出一个OSError异常。
+
+waitpid()函数的options选项：
+
+os.WNOHANG - 如果没有子进程退出，则不阻塞waitpid()调用
+
+os.WCONTINUED - 如果子进程从stop状态变为继续执行，则返回进程自前一次报告以来的信息。
+
+os.WUNTRACED - 如果子进程被停止过而且其状态信息还没有报告过，则报告子进程的信息。
 
