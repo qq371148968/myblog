@@ -8,17 +8,18 @@ tags:
 ---
 
 
+> 本章内容：
+>
+> - CSS white-space 属性
+<!-- more -->
 
 
-### 学习内容
->- CSS white-space 属性
-
+### CSS white-space 属性
 定义和用法
 white-space 属性设置如何处理元素内的空白。
-
 这个属性声明建立布局过程中如何处理元素中的空白符。值 pre-wrap 和 pre-line 是 CSS 2.1 中新增的。
 
-可能的值
+可能的值见下表:
 
 | 值 | 描述     |
 | ----- | ------ |
