@@ -30,17 +30,17 @@ samples                    sqlnet.ora
 ```
 
  修改后的：
+```shell
 LISTENER1 =
   (DESCRIPTION_LIST =
     (DESCRIPTION =
       (ADDRESS = (PROTOCOL = TCP)(HOST = xxx.com)(PORT = 1522))
     )
   )
-
+```
 3.重启网卡
 
-Linux 下网卡重启的命令为：
-
- /etc/init.d/network restart 或者是  /etc/init.d/networking restart
-或者重启网络服务：
-service network restart
+Linux 下网卡重启的命令为：<br/>
+ /etc/init.d/network restart 或者是  /etc/init.d/networking restart<br/>
+或者重启网络服务：<br/>
+service network restart<br/>
