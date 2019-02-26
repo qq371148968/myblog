@@ -1,5 +1,5 @@
 ---
-title: "oracle主机修改了ip怎么办？"
+title: "oracle主机修改了ip怎么办"
 date: 2019-02-26
 categories: Linux
 tags:oracle linux 网卡
