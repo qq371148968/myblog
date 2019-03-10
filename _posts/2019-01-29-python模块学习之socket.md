@@ -1,5 +1,5 @@
 ---
-title: "python模块学习之socket2019"
+title: "python模块学习之socket"
 data: 2019-01-29
 categories: python
 tags:
